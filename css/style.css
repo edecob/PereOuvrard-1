@@ -197,3 +197,144 @@ h1{
 #map h2{
 	margin-bottom: 50px;
 }
+
+/*
+*	menu page css
+*/
+#menu{
+    background-color: #212121;
+}
+#menu h2 {
+    font-family: parisienne;
+    color: #BA964C;
+    border: double;
+    border-width: 6px;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-top: 10px;
+	padding-bottom: 10px;
+}
+#menu div div:first-child h2 {
+    font-family: montserrat;
+    font-size: 3em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    border: none;
+    font-weight: bold;
+}
+#menu ul {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#menu ul li{
+	color: #FFFFFF;
+	list-style: none;
+}
+.btn.btn-default.btn-lg.center-block {
+    background-color: #BA964C;
+    color: #000000;
+    transition: background-color 1s;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    width: 20%;
+    border: none;
+}
+.btn.btn-default.btn-lg.center-block:hover, #submit:hover {
+	background-color: #000000;
+	color: #BA964C;
+	border: 1px solid #BA964C;
+}
+/*
+* Reservation css
+*/
+#reservation{
+	background-color: #212121;
+}
+.form-control, #personne, #heure, #type{
+	border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 50px;
+    border-radius: 0px;
+    border-bottom: 2px solid #c5c5c5;
+    width: 90%;
+    margin-left: 20px;
+    box-shadow: none;
+    color: #BA964C;
+    background-color: #212121;
+}
+.form-group textarea{
+	margin-top: 20px;
+}
+#special{
+	height: 100px;
+}
+.form-control:focus, #personne:focus, #heure:focus, #type:focus{
+	box-shadow: none;
+	border-color: #BA964C;
+}
+#personne, #heure, #type{
+	-webkit-appearance: none;
+	margin-top: 14px;
+}
+#newsletter{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+label{
+	color: #BA964C;
+}
+#submit{
+	background-color: #BA964C;
+    color: #000000;
+    transition: background-color 1s;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    width: 40%;
+    border: none;
+    margin-top: 10px;
+	margin-left: 20px;
+}
+
+/*
+*	css Presse page
+*/
+#presse div {
+    margin-top: 20px;
+}
+#presse{
+	background-color: #212121;
+	color: #FFFFFF;
+}
+#presse a{
+	transition: color 1s;
+	color: #BA964C;
+}
+#presse a:hover{
+	color: #FFFFFF;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media screen and (max-width: 576px) { 
+	#menu h2{
+		margin-left: 20%;
+    	margin-right: 20%;
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media only screen and (max-width: 767px) {
+	#menu h2{
+		margin-left: 30%;
+    	margin-right: 30%;
+	}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { ... }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
