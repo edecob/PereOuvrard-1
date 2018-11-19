@@ -3,6 +3,7 @@
 <head>
 	<title>Père Ouvrard</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- JQuery -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- Bootstrap -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!-- JavaScript for bootstrap -->
@@ -26,11 +27,11 @@
 			</div>
 			<div id="navbarCollapse" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#Accueil">Accueil</a></li>
-					<li><a href="#Restaurant">Restaurant</a></li>
-					<li><a href="#Privatisation">Privatisation</a></li>
-					<li><a href="#Soirées">Soirées</a></li>
-					<li><a href="#Contact">Contact</a></li>
+					<li><a href="index.php">Accueil</a></li>
+					<li><a href="carte.php">Carte</a></li>
+					<li><a href="reservation.php">Réservation</a></li>
+					<li><a href="soirees.php">Soirées</a></li>
+					<li><a href="presse.php">Presse</a></li>
 				</ul>
 			</div>
 		</div>
@@ -38,7 +39,9 @@
 	<header class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-xs-12" id="background">
-				<h1 class="text-center"><span id="Cap">Cap Ferret</span> <br>LE PERE OUVRARD</h1>
+				<img src="image/Logo-Phare-transparence.png" class="center-block" id="phare">
+				<h1 class="text-center">LE PERE OUVRARD</h1>
+				<h2 class="text-center" id="Cap">THE PLACE TO EAT &#x2022 CAP FERRET</h2>
 			</div>
 		</div>
 	</header>
