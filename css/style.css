@@ -81,9 +81,19 @@ h1{
 	letter-spacing: 5px;
 }
 #Cap{
-	color: #BA964C;
-	font-family: 'Parisienne', cursive;
-	letter-spacing: 0px;
+	position: absolute;
+	top: 56%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #FFFFFF;
+	font-family: 'Montserrat', cursive;
+	letter-spacing: 6px;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+#phare{
+	width: 15%;
+	margin-top: 110px;
 }
 
 /*
@@ -314,6 +324,30 @@ label{
 #presse a:hover{
 	color: #FFFFFF;
 }
+/*
+*	CSS page soiree
+*/
+#soirees{
+	background-color: #212121;
+	color: #FFFFFF;
+}
+#soirees .img-responsive {
+    height: 265px;
+	width: 300px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	border: 6px double #BA964C;
+}
+#soirees h2{
+	text-transform: uppercase;
+}
+#theme{
+	font-family: 'parisienne', sans-serif;
+	color: #BA964C;
+	text-transform: inherit !important;
+	font-size: 5em;
+}
+
 
 
 
@@ -331,10 +365,28 @@ label{
 		margin-left: 30%;
     	margin-right: 30%;
 	}
+	#menu button{
+		width: 60%;
+	}
+	#phare{
+	width: 55%;
+	margin-top: 110px;
+	}
+	#Cap{
+		top: 65%;
+	}
 }
 
 /*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { ... }
+@media (min-width: 768px) and (max-width: 1199px) { 
+	#Cap{
+		top: 60%;
+	}
+	#phare{
+	width: 35%;
+	margin-top: 110px;
+	}
+}
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { ... }

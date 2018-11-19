@@ -1,7 +1,7 @@
 <?php include_once 'header.php' ?>
 <div class="container-fluid" id="reservation">
 	<div class="row">
-		<form class="center-block">
+		<form class="center-block" method="post" action="addBdd.php">
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<div class="form-group">
 					<input type="text" class="form-control" name="nom" id="Nom" placeholder="Nom" required>
@@ -10,23 +10,23 @@
 					<input type="email" class="form-control" name="email" id="e-mail" placeholder="E-mail" required>
 				</div>
 				<div class="form-group">
-					<input type="tel" class="form-control" id="phone" name="phone" id="telephone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="Téléphone" required>
+					<input type="tel" class="form-control" id="phone" name="telephone" id="telephone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="Téléphone" required>
 				</div>
-				<select id="type">
+				<select name="type" id="type">
 					<option selected value="" disabled hidden>Type de réservation</option>
 					<option value="repas">Repas</option>
 					<option>Evénement privé</option>
 					<option>Evénement professionnel</option>	
 				</select>
 				<div class="form-group">
-					<textarea id="special" class="form-control" placeholder="Demande spéciale"></textarea>
+					<textarea id="special" name="special" class="form-control" placeholder="Demande spéciale"></textarea>
 				</div>
 			</div><!-- end column -->
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
-        			<input type="date" id="input-date" class="form-control" required>
+        			<input type="date" name="date" id="input-date" class="form-control" required>
 
-					<select id="personne">
+					<select id="personne" name="nbPersonne">
 						<option selected value="" disabled hidden>Nombre de personnes</option>
 						<option value="1">1 personne</option>
 						<option value="2">2 personnes</option>
@@ -37,7 +37,7 @@
 						<option value="7">7 personnes</option>
 						<option value="8">8 personnes</option>
 					</select>
-					<select id="heure">
+					<select id="heure" name="heure">
 						<option selected value="" disabled hidden>Heures</option>
 						<option value="12h">12h</option>
 						<option value="12h15">12h15</option>
